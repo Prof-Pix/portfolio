@@ -21,21 +21,26 @@ const Profile = () => {
         <p className="text-neutral-400 text-xl mb-4 font-semibold">
           Full Stack Web Developer
         </p>
-        <p className="text-neutral-400 mb-4">📍 Rizal, Philippines 🇵🇭</p>
-        <p className=" text-sm mb-4">
-          Building Real Products for Real Clients, Not Just More Projects
+        <p className="text-neutral-500 mb-4 ">📍 Rizal, Philippines 🇵🇭</p>
+        <p className="text-neutral-300 text-sm mb-4 flex-wrap">
+          Crafting intelligent systems. I turn AI concepts into real-world
+          products.
         </p>
       </div>
       <div className="flex flex-row flex-wrap items-center gap-x-5 gap-y-4">
-        <div className="border rounded-md px-3 py-1 flex gap-x-2 items-center">
+        <div className="border rounded-md px-3 py-1 flex gap-x-2 items-center cursor-pointer">
           <FaFileDownload /> <p>Resume</p>
         </div>
         <div className="flex flex-row gap-x-2">
           <FaGithub color="#e5e5e5" size={24} className="cursor-pointer" />
-          <MdEmail color="#e5e5e5" size={24} />
-          <FaLinkedin color="#e5e5e5" size={24} />
-          <FaInstagramSquare color="#e5e5e5" size={24} />
-          <FaXTwitter color="#e5e5e5" size={24} />
+          <MdEmail color="#e5e5e5" size={24} className="cursor-pointer" />
+          <FaLinkedin color="#e5e5e5" size={24} className="cursor-pointer" />
+          <FaInstagramSquare
+            color="#e5e5e5"
+            size={24}
+            className="cursor-pointer"
+          />
+          <FaXTwitter color="#e5e5e5" size={24} className="cursor-pointer" />
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Skill from "./Skill";
 
-const Education = ({ logo, degree, location, duration, addtlClass }) => {
+const Certification = ({ logo, title, description, duration, addtlClass }) => {
   return (
     <>
       <div className="border-l-2 border-neutral-600 pl-6 py-1">
@@ -16,8 +16,8 @@ const Education = ({ logo, degree, location, duration, addtlClass }) => {
             />
           </div>
           <div>
-            <h3 className="font-bold text-lg">{degree}</h3>
-            <p className="text-sm">{location}</p>
+            <h3 className="font-bold text-lg">{title}</h3>
+            <p className="text-sm">{description}</p>
             <p className="text-sm text-neutral-400">{duration}</p>
           </div>
         </div>
@@ -26,4 +26,4 @@ const Education = ({ logo, degree, location, duration, addtlClass }) => {
   );
 };
 
-export default Education;
+export default Certification;

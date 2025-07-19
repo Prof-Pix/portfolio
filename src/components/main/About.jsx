@@ -3,6 +3,7 @@ import Skill from "../Skill";
 import Experience from "../Experience";
 import Education from "../Education";
 import Project from "../Project";
+import Certification from "../Certification";
 
 const About = () => {
   return (
@@ -12,10 +13,11 @@ const About = () => {
         <div>
           <h1 className="text-3xl font-bold mb-4">About Me</h1>
           <p className="text-neutral-400">
-            I'm a 20-year-old Full Stack Developer with a knack for building
-            products that make a difference. My expertise spans both frontend
-            and backend technologies, enabling me to craft comprehensive
-            solutions from the round up.
+            I'm a 3rd-year Computer Science student with a passion for building
+            impactful AI-powered solutions. I bridge machine learning and
+            software development to design intelligent systems that go beyond
+            theory — from ideation and model training to integration and
+            deployment.
           </p>
         </div>
 
@@ -87,7 +89,7 @@ const About = () => {
       </div>
 
       {/**Experiences */}
-      {/* <div>
+      {/* <div className="flex flex-col gap-y-4">
         <h1 className="text-3xl font-bold mb-4">Experience</h1>
         <Experience
           role="CTO & Founder"
@@ -110,7 +112,7 @@ const About = () => {
       </div> */}
 
       {/**Education */}
-      <div>
+      <div className="flex flex-col gap-y-4">
         <h1 className="text-3xl font-bold mb-4">Education</h1>
         <Education
           logo="tiplogo.png"
@@ -120,8 +122,27 @@ const About = () => {
         />
       </div>
 
+      {/**Certifications */}
+      <div className="flex flex-col gap-y-4">
+        <h1 className="text-3xl font-bold mb-4">Certifications</h1>
+        <Certification
+          addtlClass={"min-w-24 w-24"}
+          logo="topcitlogo.png"
+          title="Level 3 (Competent)"
+          description="TOPCIT (Test of Practical Competency in IT)"
+          duration="July 10, 2025 - Present"
+        />
+        <Certification
+          addtlClass={"min-w-24 w-24"}
+          logo="oraclecloud.png"
+          title="OCI 2025 Certified AI Foundations Associate"
+          description="Oracle"
+          duration="July 18, 2025 - Present"
+        />
+      </div>
+
       {/**Projects */}
-      {/* <div>
+      {/* <div className="flex flex-col gap-y-4">
         <h1 className="text-3xl font-bold mb-4">Projects</h1>
         <Project
           title="HomeGame: Home Poker Analytics Manager"
